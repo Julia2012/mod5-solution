@@ -39,7 +39,7 @@
         </div>
         <div class="input-group">
             <input type="text" name="favmenu" placeholder="Favorite menu number"
-              ng-model="reg.user.short_name" >
+              ng-model="reg.user.short_name" ng-change="reg.user.short_name = reg.user.short_name.toUpperCase()" >
             <span ng-show="reg.errorMenuNumber">No such menu number exists. Your information hasn't been saved.</span>  
         </div>
         <button
