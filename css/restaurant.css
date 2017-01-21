@@ -147,6 +147,13 @@ button, input, select, textarea {
     float:left;
     margin-right:15px
 }
+.attention {
+    font-size: 120%;
+    margin: 30px 0;
+}  
+.attention a{
+    color:#F6B319;
+}
 
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
