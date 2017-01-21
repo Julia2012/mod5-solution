@@ -1,0 +1,23 @@
+<div class="container" >
+  
+  <div ng-show="!myinfoCtrl.user" class="text-center">Not Signed Up Yet. <a ui-sref="public.signup">Sign up</a></div>  
+
+  <div class="col-sm-6 col-sm-offset-3" ng-show="myinfoCtrl.user">
+
+    <h2 class="text-center">My Info</h2>
+    <p>First Name: {{myinfoCtrl.user.firstname}}</p>
+    <p>Last Name: {{myinfoCtrl.user.lastname}}</p>
+    <p>Email: {{myinfoCtrl.user.email}}</p>
+    <p ng-if="myinfoCtrl.user.phone">Phone: {{myinfoCtrl.user.phone}}</p>
+    <hr>
+    <p>Favorite menu item: {{myinfoCtrl.user.short_name}}</p>
+
+    <div class="menu-item-detail">
+        <img class="img-responsive" width="250" height="150" ng-src="{{myinfoCtrl.basePath}}/images/{{myinfoCtrl.user.userMenu.short_name}}.jpg" alt="{{myinfoCtrl.user.userMenu.name}}">
+        <h3 class="menu-item-title">{{myinfoCtrl.user.userMenu.name}}</h3>
+        <p class="menu-item-details">{{myinfoCtrl.user.userMenu.description}}</p>
+    </div>
+
+  </div>     
+
+</div>
