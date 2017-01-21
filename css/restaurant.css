@@ -145,6 +145,7 @@ button, input, select, textarea {
 }
 .menu-item-detail img{
     float:left;
+    border: 2px solid #3f0c1f;
     margin-right:15px
 }
 .attention {
